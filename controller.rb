@@ -10,12 +10,19 @@ end
 
 get '/address' do
   content_type(:json)
-  address = Word.new(params[:word])
+  # address = Address.new()
   results = {
     address: '3 ARGYLE HOUSE',
     building: 'CODEBASE',
-    postcode: word.make_upcase(postcode),
+    postcode: 'e13 zqf',
     phone: '0131558030'
   }
   return results.to_json
 end
+
+# get '/address/postcode' do
+#   postcode = "e13 zqf"
+# end
+
+
+
